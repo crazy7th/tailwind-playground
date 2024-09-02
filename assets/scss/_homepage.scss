@@ -1,0 +1,267 @@
+@import "./_tailwind.scss";
+
+
+.page-headline {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-textfill-color: transparent;
+    animation: text 7.5s linear infinite;
+}
+
+@keyframes text {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+.animation {
+    height: 100px;
+    overflow: hidden;
+}
+
+.animation>span {
+    padding: 0.25rem 1.25rem;
+    height: 100px;
+    display: flex;
+    width: fit-content;
+    margin: 10px 0;
+    border-radius: 16px;
+}
+
+.animation span:first-child {
+    animation: text-animation 16s infinite;
+}
+
+.animation span:first-child {
+    background-color: #20a7d8;
+}
+
+.animation span:nth-child(2) {
+    background-color: #CD921E;
+}
+
+.animation span:nth-child(3) {
+    background-color: #c10528;
+}
+
+.animation span:nth-child(4) {
+    background-color: green;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+    
+    5% {
+        margin-top: 0;
+    }
+
+    15% {
+        margin-top: -110px;
+    }
+
+    30% {
+        margin-top: -220px;
+    }
+
+    45% {
+        margin-top: -330px;
+    }
+
+    55% {
+        margin-top: -330px;
+    }
+
+    70% {
+        margin-top: -220px;
+    }
+
+    85% {
+        margin-top: -110px;
+    }
+
+    95% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+}
+
+section {
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
+    /* https://lh3.googleusercontent.com/ka_5IYJDRkXZnbptxq64LPuggGL5FM8gnpJlsuSiOQh4b39kMkiRbVfX8iK8bjMg5SLkdfoix09P60wyFjN2=w681-h614 */
+    /* background: url("./bg0.jpg"); */
+    /*   background-color:black; */
+    /* background-size: cover; */
+    /* animation: animateBg 50s linear infinite; */
+}
+
+/* @keyframes animateBg {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+} */
+
+.falling-star span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    font-size: .5rem;
+    color: #FFF;
+
+    /* width: 4px;
+    height: 4px;
+    background: #fff; */
+    /* border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.1); */
+    animation: animate 3s linear infinite;
+}
+
+.falling-star span::after {
+    content: '★';
+    display: block;
+}
+
+.falling-star span::before {
+    content: '';
+    position: absolute;
+    /* top: 50%; */
+    left: 5px;
+    top: 57%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+.falling-star span:nth-child(1) {
+    top: -15px;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+.falling-star span:nth-child(2) {
+    top: -15px;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+.falling-star span:nth-child(3) {
+    top: -15px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+.falling-star span:nth-child(4) {
+    top: -15px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+
+.falling-star span:nth-child(5) {
+    top: -15px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+.falling-star span:nth-child(6) {
+    top: -15px;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+.falling-star span:nth-child(7) {
+    top: -15px;
+    right: 300px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+
+.falling-star span:nth-child(8) {
+    top: -15px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+
+.falling-star span:nth-child(9) {
+    top: -15px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+
+.falling-star span:nth-child(9) {
+    top: -15px;
+    right: 500px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.75s;
+}
