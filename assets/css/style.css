@@ -602,6 +602,14 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .flex{
   display: flex;
 }
@@ -663,6 +671,11 @@ video {
   padding: 2rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -721,4 +734,39 @@ footer{
 }
 
 .btn {
+}
+
+@media (min-width: 768px){
+  .md\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
+  .md\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:mb-4{
+    margin-bottom: 1rem;
+  }
+
+  .md\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
