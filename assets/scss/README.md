@@ -1,5 +1,5 @@
-scss/                               # Import all ‘-dir.scss’ files
-|
+Folder Structure:
+```
 |- abstracts/                   
 |	|- __abstracts.scss         # Import all abstracts .scss files
 |	|- _fonts.scss              # Font Import
@@ -26,9 +26,15 @@ scss/                               # Import all ‘-dir.scss’ files
 |	|- _main.scss               # Main Content Styles
 |	…                           # Etc.
 |
+|- pages/
+|	|- __pages.scss             # Import all pages .scss files
+|	|- _homepage.scss           # Homepage Styles
+|	…                           # Etc.
+|
 |- vendor/
 |	|- __vendor.scss            # Import vendor folders
 |	|- tailwind/                # Tailwind
 |	…                           # Etc.
 |
-`styles.scss                        # Main Scss File
+styles.scss                   # Main Scss File
+```
