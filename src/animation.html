@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="flex fixed left-0 bottom-0">
-        <a href="./" class="p-6 h-[100px] w-[200px] rounded-tr-lg bg-white text-black flex items-center justify-between gap-2">
+    <div class="flex fixed left-0 bottom-0 z-20 invisible animation-delay animate-fadeInUp">
+        <a href="./" class="p-4 md:p-6 h-[100px] w-[180px] md:w-[200px] rounded-tr-lg bg-white text-black flex items-center justify-between gap-2">
             <div class="text-sky-500 text-2xl mr-3">
                 ←
             </div>
@@ -24,8 +24,8 @@
             </p>
         </a>
     </div>
-    <div class="flex fixed right-0 bottom-0">
-        <a href="#" class="p-6 h-[100px] w-[200px] rounded-tl-lg bg-white text-black flex items-center justify-between gap-2">
+    <div class="flex fixed right-0 bottom-0 z-20 invisible animation-delay animate-fadeInUp">
+        <a href="#" class="p-4 md:p-6 h-[100px] w-[180px] md:w-[200px] rounded-tl-lg bg-white text-black flex items-center justify-between gap-2">
             <p>
                 <span class="block text-xl font-medium">Next Page</span>
                 <span>Summary</span>
@@ -41,100 +41,100 @@
             <p>Sample and how to use</p>
         </div>
 
-        <div class="my-3 max-w-[800px] mx-auto">
+        <div class="max-w-[800px] mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8">
             <h2><b>Fade In/Out Effects</b></h2>
 
             <div
                 class="grid grid-cols-1 md:grid-cols-4 gap-8 my-4 mb-8 overflow-hidden cursor-pointer">
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeIn">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeIn">
                     fadeIn
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOut">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOut">
                     fadeOut
                 </div>
             </div>
             <div
                 class="grid grid-cols-1 md:grid-cols-4 gap-8 my-4 overflow-hidden cursor-pointer">
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInUp">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInUp">
                     fadeInUp
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInDown">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInDown">
                     fadeInDown
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft">
                     fadeInLeft
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInRight">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInRight">
                     fadeInRight
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft">
                     fadeIn<br>TopLeft
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight">
                     fadeIn<br>TopRight
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft">
                     fadeIn<br>BottomLeft
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight">
                     fadeIn<br>BottomRight
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp">
                     fadeIn<br>BounceUp
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown">
                     fadeIn<br>BounceDown
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft">
                     fadeIn<br>BounceLeft
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight">
                     fadeIn<br>BounceRight
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutUp">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutUp">
                     fadeOutUp
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutDown">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutDown">
                     fadeOutDown
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutLeft">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutLeft">
                     fadeOutLeft
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutRight">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutRight">
                     fadeOutRight
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopLeft">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopLeft">
                     fadeOut<br>TopLeft
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopRight">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopRight">
                     fadeOut<br>TopRight
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomLeft">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomLeft">
                     fadeOut<br>BottomLeft
                 </div>
                 <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomRight">
+                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomRight">
                     fadeOut<br>BottomRight
                 </div>
             </div>

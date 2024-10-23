@@ -1,0 +1,43 @@
+.animation-delay {
+    &-10 {
+        animation-delay: 100ms;
+    }
+    &-20 {
+        animation-delay: 200ms;
+    }
+    &-30 {
+        animation-delay: 300ms;
+    }
+    &-40 {
+        animation-delay: 400ms;
+    }
+    &-50 {
+        animation-delay: 500ms;
+    }
+    &-60 {
+        animation-delay: 600ms;
+    }
+    &-60 {
+        animation-delay: 700ms;
+    }
+    &-80 {
+        animation-delay: 800ms;
+    }
+    &-90 {
+        animation-delay: 900ms;
+    }
+
+    animation-delay: 1s;
+    &-1 {
+        animation-delay: 1s;
+    }
+    &-2 {
+        animation-delay: 2s;
+    }
+    &-3 {
+        animation-delay: 3s;
+    }
+    &-5 {
+        animation-delay: 5s;
+    }
+}

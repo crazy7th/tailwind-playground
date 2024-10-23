@@ -15,12 +15,15 @@ module.exports = {
         '2xl': '32px',
       },
       keyframes: {
+        //fade-in-out
         "fade-in": {
           "0%": {
-            opacity: 0
+            visibility: "visible",
+            opacity: 0,
           },
           "100%": {
-            opacity: 1
+            opacity: 1,
+            visibility: "visible",
           },
         },
         "fade-out": {
@@ -28,162 +31,195 @@ module.exports = {
             opacity: 1
           },
           "100%": {
-            opacity: 0
+            opacity: 0,
+          },
+        },
+        //fade-in
+        "fade-in-up": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(0, 100%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
           },
         },
         "fade-in-down": {
           "0%": {
+            visibility: "visible",
             opacity: 0,
             transform: "translate3d(0, -100%, 0)",
           },
           "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-top-left": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(-100%, -100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-top-right": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(100%, -100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-
-        "fade-in-bottom-left": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(100%, 100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-bottom-right": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(-100%, 100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-bounce-right": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(100%, 0%, 0)",
-          },
-          "33%": {
-            opacity: 0.5,
-            transform: "translate3d(0%, 0%, 0)",
-          },
-          "66%": {
-            opacity: 0.7,
-            transform: "translate3d(20%, 0%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-bounce-left": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(-100%, 0%, 0)",
-          },
-          "33%": {
-            opacity: 0.5,
-            transform: "translate3d(0%, 0%, 0)",
-          },
-          "66%": {
-            opacity: 0.7,
-            transform: "translate3d(-20%, 0%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-bouncedown": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(0%, -100%, 0)",
-          },
-          "33%": {
-            opacity: 0.5,
-            transform: "translate3d(0%, 0%, 0)",
-          },
-          "66%": {
-            opacity: 0.7,
-            transform: "translate3d(0%, -20%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-bounceup": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(0%, 100%, 0)",
-          },
-          "33%": {
-            opacity: 0.5,
-            transform: "translate3d(0%, 0%, 0)",
-          },
-          "66%": {
-            opacity: 0.7,
-            transform: "translate3d(0%, 20%, 0)",
-          },
-          "100%": {
+            visibility: "visible",
             opacity: 1,
             transform: "translate3d(0, 0, 0)",
           },
         },
         "fade-in-left": {
           "0%": {
+            visibility: "visible",
             opacity: 0,
             transform: "translate3d(-100%, 0, 0)",
           },
           "100%": {
+            visibility: "visible",
             opacity: 1,
             transform: "translate3d(0, 0, 0)",
           },
         },
         "fade-in-right": {
           "0%": {
+            visibility: "visible",
             opacity: 0,
             transform: "translate3d(100%, 0, 0)",
           },
           "100%": {
+            visibility: "visible",
             opacity: 1,
             transform: "translate3d(0, 0, 0)",
           },
         },
-        "fade-in-up": {
+        "fade-in-top-left": {
           "0%": {
+            visibility: "visible",
             opacity: 0,
-            transform: "translate3d(0, 100%, 0)",
+            transform: "translate3d(-100%, -100%, 0)",
           },
           "100%": {
+            visibility: "visible",
             opacity: 1,
             transform: "translate3d(0, 0, 0)",
           },
         },
+        "fade-in-top-right": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(100%, -100%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-bottom-left": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(100%, 100%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-bottom-right": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(-100%, 100%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-bounce-right": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(100%, 0%, 0)",
+          },
+          "33%": {
+            visibility: "visible",
+            opacity: 0.5,
+            transform: "translate3d(0%, 0%, 0)",
+          },
+          "66%": {
+            visibility: "visible",
+            opacity: 0.7,
+            transform: "translate3d(20%, 0%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-bounce-left": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(-100%, 0%, 0)",
+          },
+          "33%": {
+            visibility: "visible",
+            opacity: 0.5,
+            transform: "translate3d(0%, 0%, 0)",
+          },
+          "66%": {
+            visibility: "visible",
+            opacity: 0.7,
+            transform: "translate3d(-20%, 0%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-bouncedown": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(0%, -100%, 0)",
+          },
+          "33%": {
+            visibility: "visible",
+            opacity: 0.5,
+            transform: "translate3d(0%, 0%, 0)",
+          },
+          "66%": {
+            visibility: "visible",
+            opacity: 0.7,
+            transform: "translate3d(0%, -20%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-bounceup": {
+          "0%": {
+            visibility: "visible",
+            opacity: 0,
+            transform: "translate3d(0%, 100%, 0)",
+          },
+          "33%": {
+            visibility: "visible",
+            opacity: 0.5,
+            transform: "translate3d(0%, 0%, 0)",
+          },
+          "66%": {
+            visibility: "visible",
+            opacity: 0.7,
+            transform: "translate3d(0%, 20%, 0)",
+          },
+          "100%": {
+            visibility: "visible",
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        //fade-out
         "fade-out-up": {
           "0%": {
             opacity: 1,
@@ -256,6 +292,7 @@ module.exports = {
             transform: "translate3d( 100%, 100%, 0)",
           },
         },
+        //slide-in-out
         "slide-in-down": {
           "0%": {
             visibility: "visible",
@@ -292,6 +329,15 @@ module.exports = {
             transform: "translate3d(0, 0, 0)",
           },
         },
+        "slide-out-up": {
+          "0%": {
+            transform: "translate3d(0, 0, 0)",
+          },
+          "100%": {
+            visibility: "hidden",
+            transform: "translate3d(0, -100%, 0)",
+          },
+        },
         "slide-out-down": {
           "0%": {
             transform: "translate3d(0, 0, 0)",
@@ -319,12 +365,11 @@ module.exports = {
             transform: "translate3d(100%, 0, 0)",
           },
         },
-        "slide-out-up": {
+        "slide-up": {
           "0%": {
             transform: "translate3d(0, 0, 0)",
           },
           "100%": {
-            visibility: "hidden",
             transform: "translate3d(0, -100%, 0)",
           },
         },
@@ -352,14 +397,7 @@ module.exports = {
             transform: "translate3d(100%, 0, 0)",
           },
         },
-        "slide-up": {
-          "0%": {
-            transform: "translate3d(0, 0, 0)",
-          },
-          "100%": {
-            transform: "translate3d(0, -100%, 0)",
-          },
-        },
+        //additional
         tada: {
           "0%": {
             transform: "scale3d(1, 1, 1)",
@@ -424,107 +462,201 @@ module.exports = {
             transform: "scale(0)"
           },
         },
+        jiggle: {
+          "0%": {
+            transform: "scale3d(1, 1, 1)"
+          },
+          "30%": {
+            transform: "scale3d(1.25, 0.75, 1)"
+          },
+          "40%": {
+            transform: "scale3d(0.75, 1.25, 1)"
+          },
+          "50%": {
+            transform: "scale3d(1.15, 0.85, 1)"
+          },
+          "65%": {
+            transform: "scale3d(0.95, 1.05, 1)"
+          },
+          "75%": {
+            transform: "scale3d(1.05, 0.95, 1)"
+          },
+          "100%": {
+            transform: "scale3d(1, 1, 1)"
+          },
+        },
+        flash: {
+          "0%, 50%, 100%": {
+            opacity: "1"
+          },
+          "25%, 75%": {
+            opacity: "0"
+          },
+        },
+        shake: {
+          "0%, 100%": {
+            transform: "translateX(0)",
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            transform: "translateX(-10px)",
+          },
+          "20%, 40%, 60%, 80%": {
+            transform: "translateX(10px)",
+          },
+        },
+        glow: {
+          "0%": {
+            backgroundColor: "#fcfcfd"
+          },
+          "30%": {
+            backgroundColor: "#fff6cd"
+          },
+          "100%": {
+            backgroundColor: "#fcfcfd"
+          },
+        },
+        wiggle: {
+          "5%": {
+            transform: "rotate(-5deg)"
+          },
+          "20%": {
+            transform: "rotate(5deg)"
+          },
+          "40%": {
+            transform: "rotate(-5deg)"
+          },
+          "80%": {
+            transform: "rotate(5deg)"
+          }
+        },
+        //fly-in-out
         "fly-in": {
           "0%": {
+            visibility: "visible",
             opacity: "0",
             transform: "scale3d(0.3, 0.3, 0.3)",
             transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
           },
           "20%": {
+            visibility: "visible",
             transform: "scale3d(1.1, 1.1, 1.1)"
           },
           "40%": {
+            visibility: "visible",
             transform: "scale3d(0.9, 0.9, 0.9)"
           },
           "60%": {
+            visibility: "visible",
             opacity: "1",
             transform: "scale3d(1.03, 1.03, 1.03)"
           },
           "80%": {
+            visibility: "visible",
             transform: "scale3d(0.97, 0.97, 0.97)"
           },
           "100%": {
+            visibility: "visible",
             opacity: "1",
             transform: "scale3d(1, 1, 1)"
           },
         },
         "fly-in-up": {
           "0%": {
+            visibility: "visible",
             opacity: "0",
             transform: "translate3d(0, 1500px, 0)",
             transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
           },
           "60%": {
+            visibility: "visible",
             opacity: "1",
             transform: "translate3d(0, -20px, 0)"
           },
           "75%": {
+            visibility: "visible",
             transform: "translate3d(0, 10px, 0)"
           },
           "90%": {
+            visibility: "visible",
             transform: "translate3d(0, -5px, 0)"
           },
           "100%": {
+            visibility: "visible",
             transform: "translate3d(0, 0, 0)"
           },
         },
         "fly-in-down": {
           "0%": {
+            visibility: "visible",
             opacity: "0",
             transform: "translate3d(0, -1500px, 0)",
             transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
           },
           "60%": {
+            visibility: "visible",
             opacity: "1",
             transform: "translate3d(0, 25px, 0)"
           },
           "75%": {
+            visibility: "visible",
             transform: "translate3d(0, -10px, 0)"
           },
           "90%": {
+            visibility: "visible",
             transform: "translate3d(0, 5px, 0)"
           },
           "100%": {
+            visibility: "visible",
             transform: "none"
           },
         },
         "fly-in-left": {
           "0%": {
+            visibility: "visible",
             opacity: "0",
             transform: "translate3d(1500px, 0, 0)",
             transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
           },
           "60%": {
+            visibility: "visible",
             opacity: "1",
             transform: "translate3d(-25px, 0, 0)"
           },
           "75%": {
+            visibility: "visible",
             transform: "translate3d(10px, 0, 0)"
           },
           "90%": {
+            visibility: "visible",
             transform: "translate3d(-5px, 0, 0)"
           },
           "100%": {
+            visibility: "visible",
             transform: "none"
           },
         },
         "fly-in-right": {
           "0%": {
+            visibility: "visible",
             opacity: "0",
             transform: "translate3d(-1500px, 0, 0)",
             transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
           },
           "60%": {
+            visibility: "visible",
             opacity: "1",
             transform: "translate3d(25px, 0, 0)"
           },
           "75%": {
+            visibility: "visible",
             transform: "translate3d(-10px, 0, 0)"
           },
           "90%": {
+            visibility: "visible",
             transform: "translate3d(5px, 0, 0)"
           },
           "100%": {
+            visibility: "visible",
             transform: "none"
           },
         },
@@ -622,6 +754,7 @@ module.exports = {
             zIndex: "999"
           },
         },
+        //browse
         "browse-out": {
           "0%": {
             transform: "translateX(0%) rotateY(0deg) rotateX(0deg)",
@@ -676,76 +809,8 @@ module.exports = {
             transform: "translateX(0%) rotateY(0deg) rotateX(0deg) translateZ(-10px)",
           },
         },
-        jiggle: {
-          "0%": {
-            transform: "scale3d(1, 1, 1)"
-          },
-          "30%": {
-            transform: "scale3d(1.25, 0.75, 1)"
-          },
-          "40%": {
-            transform: "scale3d(0.75, 1.25, 1)"
-          },
-          "50%": {
-            transform: "scale3d(1.15, 0.85, 1)"
-          },
-          "65%": {
-            transform: "scale3d(0.95, 1.05, 1)"
-          },
-          "75%": {
-            transform: "scale3d(1.05, 0.95, 1)"
-          },
-          "100%": {
-            transform: "scale3d(1, 1, 1)"
-          },
-        },
-        flash: {
-          "0%, 50%, 100%": {
-            opacity: "1"
-          },
-          "25%, 75%": {
-            opacity: "0"
-          },
-        },
-        shake: {
-          "0%, 100%": {
-            transform: "translateX(0)",
-          },
-          "10%, 30%, 50%, 70%, 90%": {
-            transform: "translateX(-10px)",
-          },
-          "20%, 40%, 60%, 80%": {
-            transform: "translateX(10px)",
-          },
-        },
-        glow: {
-          "0%": {
-            backgroundColor: "#fcfcfd"
-          },
-          "30%": {
-            backgroundColor: "#fff6cd"
-          },
-          "100%": {
-            backgroundColor: "#fcfcfd"
-          },
-        },
-
-        wiggle: {
-          "5%": {
-            transform: "rotate(-5deg)"
-          },
-          "20%": {
-            transform: "rotate(5deg)"
-          },
-          "40%": {
-            transform: "rotate(-5deg)"
-          },
-          "80%": {
-            transform: "rotate(5deg)"
-          }
-        },
+        //flip
         flip: {
-
           "0%": {
             transform: "rotateY(-180deg)"
           },
@@ -944,6 +1009,7 @@ module.exports = {
             transform: "translate3d(0, 0, 0) rotateX(0deg)",
           },
         },
+        //zoom
         "zoom-in": {
           "0%": {
             opacity: 0,
@@ -1142,18 +1208,18 @@ module.exports = {
     animation: {
       fadeIn: 'fade-in 1s ease-in-out 0.25s 1 forwards',
       fadeOut: 'fade-out 1s ease-out 0.25s 1 forwards',
+      fadeInUp: 'fade-in-up 1s ease-in-out 0.25s 1 forwards',
+      fadeInLeft: 'fade-in-left 1s ease-in-out 0.25s 1 forwards',
       fadeInDown: 'fade-in-down 1s ease-in 0.25s 1 forwards',
+      fadeInRight: 'fade-in-right 1s ease-in-out 0.25s 1 forwards',
       fadeInTopLeft: 'fade-in-top-left 1s ease-out 0.25s 1 forwards',
       fadeInTopRight: 'fade-in-top-right 1s ease-out 0.25s 1 forwards',
       fadeInBottomLeft: 'fade-in-bottom-left 1s ease-out 0.25s 1 forwards',
       fadeInBottomRight: 'fade-in-bottom-right 1s ease-out 0.25s 1 forwards',
-      fadeInLeft: 'fade-in-left 1s ease-in-out 0.25s 1 forwards',
       fadeInBounceDown: 'fade-in-bouncedown 1s ease-in-out 0.25s 1 forwards',
       fadeInBounceUp: 'fade-in-bounceup 1s ease-in-out 0.25s 1 forwards',
       fadeInBounceRight: 'fade-in-bounce-right 1s ease-in-out 0.25s 1 forwards',
       fadeInBounceLeft: 'fade-in-bounce-left 1s ease-in-out 0.25s 1 forwards',
-      fadeInRight: 'fade-in-right 1s ease-in-out 0.25s 1 forwards',
-      fadeInUp: 'fade-in-up 1s ease-in-out 0.25s 1 forwards',
       fadeOutDown: 'fade-out-down 1s ease-in-out 0.25s 1 forwards',
       fadeOutLeft: 'fade-out-left 1s ease-in-out 0.25s 1 forwards',
       fadeOutRight: 'fade-out-right 1s ease-in-out 0.25s 1 forwards',

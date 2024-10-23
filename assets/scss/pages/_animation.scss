@@ -1,0 +1,8 @@
+.grid div {
+    &:nth-child(odd) {
+        @apply bg-indigo-300;
+    }
+    &:nth-child(even) {
+        @apply bg-indigo-100;
+    }
+}
