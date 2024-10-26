@@ -15,8 +15,8 @@
 <body>
     <div class="flex fixed left-0 bottom-0 z-20 invisible animation-delay animate-fadeInUp">
         <a href="../index.html"
-            class="p-4 md:p-6 h-[100px] w-[180px] md:w-[200px] rounded-tr-lg bg-white text-black flex items-center justify-between gap-2">
-            <div class="text-sky-500 text-2xl mr-3">
+            class="p-4 md:px-6 h-[80px] w-[180px] md:w-[200px] rounded-tr-lg bg-white text-black flex items-center justify-between gap-2">
+            <div class="text-orange-600 text-2xl mr-3">
                 ←
             </div>
             <p>
@@ -27,235 +27,421 @@
     </div>
     <div class="flex fixed right-0 bottom-0 z-20 invisible animation-delay animate-fadeInUp">
         <a href="#"
-            class="p-4 md:p-6 h-[100px] w-[180px] md:w-[200px] rounded-tl-lg bg-white text-black flex items-center justify-between gap-2">
+            class="p-4 md:px-6 h-[80px] w-[180px] md:w-[200px] rounded-tl-lg bg-white text-black flex items-center justify-between gap-2">
             <p>
                 <span class="block text-xl font-medium">Next Page</span>
                 <span>Summary</span>
             </p>
-            <div class="text-sky-500 text-2xl ml-3">
+            <div class="text-orange-600 text-2xl ml-3">
                 →
             </div>
         </a>
     </div>
-    <div class="p-4 min-h-[120px]">
-        <h1 class="text-5xl"><b>Animation Effects</b></h1>
-        <p>Sample and how to use</p>
+    <div class="w-full md:h-screen md:overflow-hidden md:flex relative justify-between">
+        <div class="p-4 py-8 sticky top-0">
+            <div class="mb-5">
+                <h1 class="text-5xl"><b>Animation Effects</b></h1>
+                <p>Sample and how to use</p>
+            </div>
+            <div>
+                <p class="mb-2">List of Effects:</p>
+                <ul class="flex flex-col gap-y-2">
+                    <li>
+                        <button
+                            onclick="showList('fadeIn')"
+                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            <svg class="icon" width="6" height="10">
+                                <use href="#caret-right"></use>
+                            </svg>
+                            Fade In
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            onclick="showList('fadeOut')"
+                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            <svg class="icon" width="6" height="10">
+                                <use href="#caret-right"></use>
+                            </svg>
+                            Fade Out
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            onclick="showList('slideIn')"
+                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            <svg class="icon" width="6" height="10">
+                                <use href="#caret-right"></use>
+                            </svg>
+                            Slide In/Out
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            onclick="showList('flyIn')"
+                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            <svg class="icon" width="6" height="10">
+                                <use href="#caret-right"></use>
+                            </svg>
+                            Fly In/Out
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-full md:min-w-[60%] p-8 overflow-y-auto">
+            <!--1st Effect: Fade In/Out-->
+            <div id="fadeIn"
+                class="content-hidden w-full h-full mx-auto animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 show">
+                <h2><b>Fade In Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeIn"
+                        data-copy-id="animate-fadeIn"
+                    >
+                        fadeIn
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInUp"
+                        data-copy-id="animate-fadeInUp"
+                    >
+                        fadeInUp
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInDown"
+                        data-copy-id="animate-fadeInDown"
+                    >
+                        fadeInDown
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft"
+                        data-copy-id="animate-fadeInLeft"
+                    >
+                        fadeInLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInRight"
+                        data-copy-id="animate-fadeInRight"
+                    >
+                        fadeInRight
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft"
+                        data-copy-id="animate-fadeInTopLeft"
+                    >
+                        fadeIn<br>TopLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight"
+                        data-copy-id="animate-fadeInTopRight"
+                    >
+                        fadeIn<br>TopRight
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft"
+                        data-copy-id="animate-fadeInBottomLeft"
+                    >
+                        fadeIn<br>BottomLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight"
+                        data-copy-id="animate-fadeInBottomRight"
+                    >
+                        fadeIn<br>BottomRight
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp"
+                        data-copy-id="animate-fadeInBounceUp"
+                    >
+                        fadeIn<br>BounceUp
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown"
+                        data-copy-id="animate-fadeInBounceDown"
+                    >
+                        fadeIn<br>BounceDown
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft"
+                        data-copy-id="animate-fadeInBounceLeft"
+                    >
+                        fadeIn<br>BounceLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight"
+                        data-copy-id="animate-fadeInBounceRight"
+                    >
+                        fadeIn<br>BounceRight
+                    </div>
+                </div>
+            </div>
+            <div id="fadeOut"
+                class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
+                <h2><b>Fade Out Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOut"
+                        data-copy-id="animate-fadeOut"
+                    >
+                        fadeOut
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutUp"
+                        data-copy-id="animate-fadeOutUp"
+                    >
+                        fadeOutUp
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutDown"
+                        data-copy-id="animate-fadeOutDown"
+                    >
+                        fadeOutDown
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutLeft"
+                        data-copy-id="animate-fadeOutLeft"
+                    >
+                        fadeOutLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutRight"
+                        data-copy-id="animate-fadeOutRight"
+                    >
+                        fadeOutRight
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopLeft"
+                        data-copy-id="animate-fadeOutTopLeft"
+                    >
+                        fadeOut<br>TopLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopRight"
+                        data-copy-id="animate-fadeOutTopRight"
+                    >
+                        fadeOut<br>TopRight
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomLeft"
+                        data-copy-id="animate-fadeOutBottomLeft"
+                    >
+                        fadeOut<br>BottomLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomRight"
+                        data-copy-id="animate-fadeOutBottomRight"
+                    >
+                        fadeOut<br>BottomRight
+                    </div>
+                </div>
+            </div>
+
+            <!--2nd Effect: Slide In/Out-->
+            <div id="slideIn"
+                class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
+                <h2><b>Slide In Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInUp"
+                        data-copy-id="animate-slideInUp"
+                    >
+                        slideInUp
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInDown"
+                        data-copy-id="animate-slideInDown"
+                    >
+                        slideInDown
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInLeft"
+                        data-copy-id="animate-slideInLeft"
+                    >
+                        slideInLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInRight"
+                        data-copy-id="animate-slideInRight"
+                    >
+                        slideInRight
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideUp"
+                        data-copy-id="animate-slideUp"
+                    >
+                        slideUp
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideDown"
+                        data-copy-id="animate-slideDown"
+                    >
+                        slideDown
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideLeft"
+                        data-copy-id="animate-slideLeft"
+                    >
+                        slideLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideRight"
+                        data-copy-id="animate-slideRight"
+                    >
+                        slideRight
+                    </div>
+                </div>
+                <h2 class="mt-10"><b>Slide Out Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutUp"
+                        data-copy-id="animate-slideOutUp"
+                    >
+                        slideOutUp
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutDown"
+                        data-copy-id="animate-slideOutDown"
+                    >
+                        slideOutDown
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutLeft"
+                        data-copy-id="animate-slideOutLeft"
+                    >
+                        slideOutLeft
+                    </div>
+                    <div
+                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutRight"
+                        data-copy-id="animate-slideOutRight"
+                    >
+                        slideOutRight
+                    </div>
+                </div>
+            </div>
+
+            <!--3rd Effect: Fly In/Out-->
+            <div id="flyIn"
+                class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
+                <h2><b>Fly In Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyIn"
+                        data-copy-id="animate-flyIn"
+                    >
+                        flyIn
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInUp"
+                        data-copy-id="animate-flyInUp"
+                    >
+                        flyInUp
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInDown"
+                        data-copy-id="animate-flyInDown"
+                    >
+                        flyInDown
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInLeft"
+                        data-copy-id="animate-flyInLeft"
+                    >
+                        flyInLeft
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInRight"
+                        data-copy-id="animate-flyInRight"
+                    >
+                        flyInRight
+                    </div>
+                </div>
+
+                <h2 class="mt-10"><b>Fly Out Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOut"
+                        data-copy-id="animate-flyOut"
+                    >
+                        flyOut
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutUp"
+                        data-copy-id="animate-flyOutUp"
+                    >
+                        flyOutUp
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutDown"
+                        data-copy-id="animate-flyOutDown"
+                    >
+                        flyOutDown
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutLeft"
+                        data-copy-id="animate-flyOutLeft"
+                    >
+                        flyOutLeft
+                    </div>
+                    <div
+                        class="bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutRight"
+                        data-copy-id="animate-flyOutRight"
+                    >
+                        flyOutRight
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w-full max-h-[calc(100vh-120px)] overflow-y-auto z-20 p-2">
-        <!--1st Effect: Fade In/Out-->
-        <div
-            class="max-w-[800px] mx-auto animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4">
-            <h2><b>Fade In Effects</b></h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 my-4 mb-8 overflow-hidden cursor-pointer">
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeIn">
-                    fadeIn
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInUp">
-                    fadeInUp
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInDown">
-                    fadeInDown
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft">
-                    fadeInLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeInRight">
-                    fadeInRight
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft">
-                    fadeIn<br>TopLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight">
-                    fadeIn<br>TopRight
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft">
-                    fadeIn<br>BottomLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight">
-                    fadeIn<br>BottomRight
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp">
-                    fadeIn<br>BounceUp
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown">
-                    fadeIn<br>BounceDown
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft">
-                    fadeIn<br>BounceLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight">
-                    fadeIn<br>BounceRight
-                </div>
-            </div>
+    <svg class="icon-svg hidden">
+        <defs>
+            <symbol viewBox="0 0 11.166 11.166" id="close" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M6.997 5.583l3.877-3.876A1 1 0 1 0 9.459.293L5.583 4.169 1.707.293A1 1 0 0 0 .293 1.707l3.876 3.876L.293 9.46a1 1 0 1 0 1.414 1.415l3.876-3.877 3.876 3.877a1 1 0 1 0 1.415-1.415z">
+                </path>
+            </symbol>
 
-            <h2><b>Fade Out Effects</b></h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 my-4 overflow-hidden cursor-pointer">
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOut">
-                    fadeOut
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutUp">
-                    fadeOutUp
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutDown">
-                    fadeOutDown
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutLeft">
-                    fadeOutLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-fadeOutRight">
-                    fadeOutRight
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopLeft">
-                    fadeOut<br>TopLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopRight">
-                    fadeOut<br>TopRight
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomLeft">
-                    fadeOut<br>BottomLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomRight">
-                    fadeOut<br>BottomRight
-                </div>
-            </div>
-        </div>
+            <symbol viewBox="0 0 8.056 17" id="caret-left" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 8.5a4.488 4.488 0 0 1 1.09-2.929L5.418.524a1.5 1.5 0 1 1 2.278 1.952L3.368 7.524a1.492 1.492 0 0 0 0 1.952l4.327 5.048a1.5 1.5 0 0 1-2.279 1.953l-4.325-5.048A4.488 4.488 0 0 1 0 8.5z">
+                </path>
+            </symbol>
 
-        <!--2nd Effect: Slide In/Out-->
-        <div
-            class="max-w-[800px] mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4">
-            <h2><b>Slide In Effects</b></h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 my-4 mb-8 overflow-hidden cursor-pointer">
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideInUp">
-                    slideInUp
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideInDown">
-                    slideInDown
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideInLeft">
-                    slideInLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideInRight">
-                    slideInRight
-                </div>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 my-4 mb-8 overflow-hidden cursor-pointer">
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideUp">
-                    slideUp
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideDown">
-                    slideDown
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideLeft">
-                    slideLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideRight">
-                    slideRight
-                </div>
-            </div>
+            <symbol viewBox="0 0 4.672 9.5" id="caret-right" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M.75 9.5a.75.75 0 0 1-.53-1.28l2.586-2.586a1.25 1.25 0 0 0 0-1.768L.22 1.28A.75.75 0 0 1 1.28.22l2.586 2.586a2.749 2.749 0 0 1 0 3.888L1.28 9.28a.748.748 0 0 1-.53.22z">
+                </path>
+            </symbol>
 
-            <h2><b>Slide Out Effects</b></h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 my-4 overflow-hidden cursor-pointer">
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideOutUp">
-                    slideOutUp
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideOutDown">
-                    slideOutDown
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideOutLeft">
-                    slideOutLeft
-                </div>
-                <div
-                    class="text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-slideOutRight">
-                    slideOutRight
-                </div>
-            </div>
-        </div>
+            <symbol viewBox="0 0 17 8.056" id="caret-up" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8.5 0a4.488 4.488 0 0 1 2.929 1.09l5.047 4.327a1.5 1.5 0 1 1-1.952 2.278L9.476 3.368a1.492 1.492 0 0 0-1.952 0L2.477 7.695A1.5 1.5 0 0 1 .523 5.416l5.048-4.325A4.488 4.488 0 0 1 8.5 0z">
+                </path>
+            </symbol>
 
-        <!--3rd Effect: Fly In/Out-->
-        <div
-            class="max-w-[800px] mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4">
-            <h2><b>Fly In Effects</b></h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 my-4 mb-8 overflow-hidden cursor-pointer">
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyIn">
-                    flyIn
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyInUp">
-                    flyInUp
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyInDown">
-                    flyInDown
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyInLeft">
-                    flyInLeft
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyInRight">
-                    flyInRight
-                </div>
-            </div>
+            <symbol viewBox="0 0 17 8.056" id="caret-down" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8.5 8.056a4.488 4.488 0 0 1-2.929-1.091L.524 2.639A1.5 1.5 0 1 1 2.476.361l5.048 4.326a1.492 1.492 0 0 0 1.952 0L14.524.361a1.5 1.5 0 0 1 1.953 2.278l-5.048 4.326A4.488 4.488 0 0 1 8.5 8.055z">
+                </path>
+            </symbol>
 
-            <h2><b>Fly Out Effects</b></h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 my-4 overflow-hidden cursor-pointer">
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyOut">
-                    flyOut
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyOutUp">
-                    flyOutUp
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyOutDown">
-                    flyOutDown
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyOutLeft">
-                    flyOutLeft
-                </div>
-                <div
-                    class="bg-indigo-100 text-indigo-600 text-base w-full h-36 font-medium flex items-center justify-center text-center hover:animate-flyOutRight">
-                    flyOutRight
-                </div>
-            </div>
-        </div>
-    </div>
+            <symbol viewBox="0 0 20 20" id="chevron-down" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </symbol>
+
+            <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16px" height="8px" viewBox="0 0 21 13">
+                <path d="M10.5 9.55L1.72.3.28 1.7 10.5 12.45 20.72 1.7 19.28.3z"></path>
+            </symbol>
+
+            <symbol id="clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+            </symbol>
+        </defs>
+    </svg>
+    <script src= "../assets/js/app.js"></script>
 </body>
 
 </html>
