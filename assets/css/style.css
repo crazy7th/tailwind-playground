@@ -1056,6 +1056,140 @@ video {
   animation: fade-in-bounce-right 1s ease-in-out 0.25s 1 forwards;
 }
 
+@keyframes fade-out{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+.animate-fadeOut{
+  animation: fade-out 1s ease-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-down{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.animate-fadeOutDown{
+  animation: fade-out-down 1s ease-in-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-left{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.animate-fadeOutLeft{
+  animation: fade-out-left 1s ease-in-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-right{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.animate-fadeOutRight{
+  animation: fade-out-right 1s ease-in-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-up{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.animate-fadeOutUp{
+  animation: fade-out-up 1s ease-in-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-bottom-left{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d(-100%, 100%, 0);
+  }
+}
+
+.animate-fadeOutBottomLeft{
+  animation: fade-out-bottom-left 1s ease-in-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-bottom-right{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d( 100%, 100%, 0);
+  }
+}
+
+.animate-fadeOutBottomRight{
+  animation: fade-out-bottom-right 1s ease-in-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-top-left{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d(-100%, -100%, 0);
+  }
+}
+
+.animate-fadeOutTopLeft{
+  animation: fade-out-top-left 1s ease-in-out 0.25s 1 forwards;
+}
+
+@keyframes fade-out-top-right{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate3d( 100%, -100%, 0);
+  }
+}
+
+.animate-fadeOutTopRight{
+  animation: fade-out-top-right 1s ease-in-out 0.25s 1 forwards;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
