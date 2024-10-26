@@ -355,17 +355,13 @@
     </svg>
     <script>
         function showList(effName) {
-            console.log('effName: ', effName);
-            // resetHidden();
-            // elList.classList.remove("hidden");
-            // elList.style.display = "block";
-
+            //toggle previous element
             var effId = document.querySelector('.content-hidden.show').id;
-            console.log('effId: ', effId);
             var elPrev = document.getElementById(effId);
             elPrev.classList.toggle("hidden");
             elPrev.classList.toggle("show");
 
+            //toggle selected element
             var elNext = document.getElementById(effName);
             elNext.classList.toggle("hidden");
             elNext.classList.toggle("show");
