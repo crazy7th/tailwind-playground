@@ -96,55 +96,81 @@
                 <h2><b>Fade In Effects</b></h2>
                 <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeIn">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeIn"
+                        onclick="copyClass('animate-fadeIn')"
+                    >
                         fadeIn
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInUp">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInUp"
+                        onclick="copyClass('animate-fadeInUp')"
+                    >
                         fadeInUp
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInDown">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInDown"
+                        onclick="copyClass('animate-fadeInDown')"
+                    >
                         fadeInDown
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft"
+                        onclick="copyClass('animate-fadeInLeft')"
+                    >
                         fadeInLeft
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInRight">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInRight"
+                        onclick="copyClass('animate-fadeInRight')"
+                    >
                         fadeInRight
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft"
+                        onclick="copyClass('animate-fadeInTopLeft')"
+                    >
                         fadeIn<br>TopLeft
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight"
+                        onclick="copyClass('animate-fadeInTopRight')"
+                    >
                         fadeIn<br>TopRight
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft"
+                        onclick="copyClass('animate-fadeInBottomLeft')"
+                    >
                         fadeIn<br>BottomLeft
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight"
+                        onclick="copyClass('animate-fadeInBottomRight')"
+                    >
                         fadeIn<br>BottomRight
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp"
+                        onclick="copyClass('animate-fadeInBounceUp')"
+                    >
                         fadeIn<br>BounceUp
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown"
+                        onclick="copyClass('animate-fadeInBounceDown')"
+                    >
                         fadeIn<br>BounceDown
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft"
+                        onclick="copyClass('animate-fadeInBounceLeft')"
+                    >
                         fadeIn<br>BounceLeft
                     </div>
                     <div
-                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight">
+                        class="text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight"
+                        onclick="copyClass('animate-fadeInBounceRight')"
+                    >
                         fadeIn<br>BounceRight
                     </div>
                 </div>
@@ -365,6 +391,11 @@
             var elNext = document.getElementById(effName);
             elNext.classList.toggle("hidden");
             elNext.classList.toggle("show");
+        }
+
+        function copyClass(animatedName) {
+            navigator.clipboard.writeText(animatedName);
+            alert("'" + animatedName + "' copied to clipboard")
         }
     </script>
 </body>
