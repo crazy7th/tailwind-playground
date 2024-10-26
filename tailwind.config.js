@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     './assets/**/*.{html,js}',
-    './src/**/*.{html,js}',
+    './animation/**/*.{html,js}',
     './index.html',
   ],
   theme: {
