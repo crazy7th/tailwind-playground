@@ -1,3 +1,19 @@
-.btn {
-    
+.twc-btn {
+    &-primary-outline {
+        @apply py-2 px-4 font-bold bg-white text-black fill-black;
+        &:hover {
+            @apply bg-orange-600 text-white fill-white;
+        }
+        &.animate-fillInRight {
+            background: linear-gradient(to left, #FFF 50%, #ea580c  50%);
+            @apply bg-[length:200%_100%] bg-right-top;
+            transition: all ease 0.3s;
+            &:hover {
+                @apply bg-left-top;
+            }
+        }
+    }
+    &-svg {
+        @apply flex items-center gap-2;
+    }
 }

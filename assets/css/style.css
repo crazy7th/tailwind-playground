@@ -1860,7 +1860,42 @@ footer{
   height: 2rem;
 }
 
-.btn {
+.twc-btn-primary-outline{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  fill: #000;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.twc-btn-primary-outline:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+  fill: #fff;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.twc-btn-primary-outline.animate-fillInRight {
+  background: linear-gradient(to left, #FFF 50%, #ea580c  50%);
+  background-size: 200% 100%;
+  background-position: right top;
+  transition: all ease 0.3s;
+}
+
+.twc-btn-primary-outline.animate-fillInRight:hover{
+  background-position: left top;
+}
+
+.twc-btn-svg{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .grid div:nth-child(odd){
@@ -2789,6 +2824,14 @@ footer{
 }
 
 @media (min-width: 768px){
+  .md\:sticky{
+    position: sticky;
+  }
+
+  .md\:top-0{
+    top: 0px;
+  }
+
   .md\:mb-0{
     margin-bottom: 0px;
   }
@@ -2827,6 +2870,14 @@ footer{
 
   .md\:overflow-hidden{
     overflow: hidden;
+  }
+
+  .md\:overflow-y-auto{
+    overflow-y: auto;
+  }
+
+  .md\:p-8{
+    padding: 2rem;
   }
 
   .md\:px-0{

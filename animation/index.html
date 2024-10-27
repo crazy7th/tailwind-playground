@@ -38,18 +38,18 @@
         </a>
     </div>
     <div class="w-full md:h-screen md:overflow-hidden md:flex relative justify-between">
-        <div class="p-4 py-8 sticky top-0">
+        <div class="p-4 py-8 md:sticky md:top-0">
             <div class="mb-5">
                 <h1 class="text-5xl"><b>Animation Effects</b></h1>
                 <p>Sample and how to use</p>
             </div>
-            <div>
+            <div class="mb-5">
                 <p class="mb-2">List of Effects:</p>
                 <ul class="flex flex-col gap-y-2">
                     <li>
                         <button
                             onclick="showList('fadeIn')"
-                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            class="w-full rounded-lg twc-btn-primary-outline twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
                             </svg>
@@ -59,7 +59,7 @@
                     <li>
                         <button
                             onclick="showList('fadeOut')"
-                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            class="w-full rounded-lg twc-btn-primary-outline twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
                             </svg>
@@ -69,7 +69,7 @@
                     <li>
                         <button
                             onclick="showList('slideIn')"
-                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            class="w-full rounded-lg twc-btn-primary-outline twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
                             </svg>
@@ -79,7 +79,7 @@
                     <li>
                         <button
                             onclick="showList('flyIn')"
-                            class="flex w-full py-2 px-4 rounded-lg gap-2 items-center bg-white text-black font-bold hover:bg-orange-600 hover:text-white hover:fill-white">
+                            class="w-full rounded-lg twc-btn-primary-outline twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
                             </svg>
@@ -89,7 +89,7 @@
                 </ul>
             </div>
         </div>
-        <div class="h-full md:min-w-[60%] p-8 overflow-y-auto">
+        <div class="h-full md:min-w-[60%] p-4 md:p-8 md:overflow-y-auto">
             <!--1st Effect: Fade In/Out-->
             <div id="fadeIn"
                 class="content-hidden w-full h-full mx-auto animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 show">
