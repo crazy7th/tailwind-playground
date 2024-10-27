@@ -574,10 +574,6 @@ video {
   position: relative;
 }
 
-.sticky{
-  position: sticky;
-}
-
 .-bottom-14{
   bottom: -3.5rem;
 }
@@ -612,10 +608,6 @@ video {
 
 .right-8{
   right: 2rem;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .z-20{
@@ -1653,10 +1645,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-y-auto{
-  overflow-y: auto;
-}
-
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -1695,11 +1683,6 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-8{
@@ -1860,20 +1843,47 @@ footer{
   height: 2rem;
 }
 
-.twc-btn-primary-outline{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  fill: #000;
+.twc-btn{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: 700;
+}
+
+.twc-btn-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+  fill: #fff;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.twc-btn-primary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
+.twc-btn-primary.animate-fillInRight {
+  background: linear-gradient(to left, #f97316 50%, #ea580c  50%);
+  background-size: 200% 100%;
+  background-position: right top;
+  transition: all ease 0.3s;
+}
+
+.twc-btn-primary.animate-fillInRight:hover{
+  background-position: left top;
+}
+
+.twc-btn-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  fill: #000;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.twc-btn-primary-outline:hover{
+.twc-btn-secondary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
   fill: #fff;
@@ -1881,14 +1891,14 @@ footer{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.twc-btn-primary-outline.animate-fillInRight {
+.twc-btn-secondary.animate-fillInRight {
   background: linear-gradient(to left, #FFF 50%, #ea580c  50%);
   background-size: 200% 100%;
   background-position: right top;
   transition: all ease 0.3s;
 }
 
-.twc-btn-primary-outline.animate-fillInRight:hover{
+.twc-btn-secondary.animate-fillInRight:hover{
   background-position: left top;
 }
 
@@ -2807,20 +2817,6 @@ footer{
 
 .hover\:animate-slideUp:hover{
   animation: slide-up 1s ease-in-out 0.25s 1 forwards;
-}
-
-.hover\:bg-orange-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
-}
-
-.hover\:fill-white:hover{
-  fill: #fff;
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
