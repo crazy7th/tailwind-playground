@@ -47,8 +47,7 @@
                 <p class="mb-2">List of Effects:</p>
                 <ul class="flex flex-col gap-y-2">
                     <li>
-                        <button
-                            onclick="showList('fadeIn')"
+                        <button onclick="showList('fadeIn')"
                             class="w-full rounded-lg twc-btn twc-btn-secondary twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
@@ -57,8 +56,7 @@
                         </button>
                     </li>
                     <li>
-                        <button
-                            onclick="showList('fadeOut')"
+                        <button onclick="showList('fadeOut')"
                             class="w-full rounded-lg twc-btn twc-btn-secondary twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
@@ -67,8 +65,7 @@
                         </button>
                     </li>
                     <li>
-                        <button
-                            onclick="showList('slideIn')"
+                        <button onclick="showList('slideIn')"
                             class="w-full rounded-lg twc-btn twc-btn-secondary twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
@@ -77,13 +74,30 @@
                         </button>
                     </li>
                     <li>
-                        <button
-                            onclick="showList('flyIn')"
+                        <button onclick="showList('flyIn')"
                             class="w-full rounded-lg twc-btn twc-btn-secondary twc-btn-svg animate-fillInRight">
                             <svg class="icon" width="6" height="10">
                                 <use href="#caret-right"></use>
                             </svg>
                             Fly In/Out
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="showList('flip')"
+                            class="w-full rounded-lg twc-btn twc-btn-secondary twc-btn-svg animate-fillInRight">
+                            <svg class="icon" width="6" height="10">
+                                <use href="#caret-right"></use>
+                            </svg>
+                            Horizontal Flip
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="showList('flipy')"
+                            class="w-full rounded-lg twc-btn twc-btn-secondary twc-btn-svg animate-fillInRight">
+                            <svg class="icon" width="6" height="10">
+                                <use href="#caret-right"></use>
+                            </svg>
+                            Vertical Flip
                         </button>
                     </li>
                 </ul>
@@ -95,82 +109,56 @@
                 class="content-hidden w-full h-full mx-auto animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 show">
                 <h2><b>Fade In Effects</b></h2>
                 <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeIn"
-                        data-copy-id="animate-fadeIn"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeIn"
+                        data-copy-id="animate-fadeIn">
                         fadeIn
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInUp"
-                        data-copy-id="animate-fadeInUp"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInUp"
+                        data-copy-id="animate-fadeInUp">
                         fadeInUp
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInDown"
-                        data-copy-id="animate-fadeInDown"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInDown"
+                        data-copy-id="animate-fadeInDown">
                         fadeInDown
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft"
-                        data-copy-id="animate-fadeInLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInLeft"
+                        data-copy-id="animate-fadeInLeft">
                         fadeInLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInRight"
-                        data-copy-id="animate-fadeInRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeInRight"
+                        data-copy-id="animate-fadeInRight">
                         fadeInRight
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft"
-                        data-copy-id="animate-fadeInTopLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopLeft"
+                        data-copy-id="animate-fadeInTopLeft">
                         fadeIn<br>TopLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight"
-                        data-copy-id="animate-fadeInTopRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInTopRight"
+                        data-copy-id="animate-fadeInTopRight">
                         fadeIn<br>TopRight
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft"
-                        data-copy-id="animate-fadeInBottomLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomLeft"
+                        data-copy-id="animate-fadeInBottomLeft">
                         fadeIn<br>BottomLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight"
-                        data-copy-id="animate-fadeInBottomRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBottomRight"
+                        data-copy-id="animate-fadeInBottomRight">
                         fadeIn<br>BottomRight
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp"
-                        data-copy-id="animate-fadeInBounceUp"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceUp"
+                        data-copy-id="animate-fadeInBounceUp">
                         fadeIn<br>BounceUp
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown"
-                        data-copy-id="animate-fadeInBounceDown"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceDown"
+                        data-copy-id="animate-fadeInBounceDown">
                         fadeIn<br>BounceDown
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft"
-                        data-copy-id="animate-fadeInBounceLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceLeft"
+                        data-copy-id="animate-fadeInBounceLeft">
                         fadeIn<br>BounceLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight"
-                        data-copy-id="animate-fadeInBounceRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeInBounceRight"
+                        data-copy-id="animate-fadeInBounceRight">
                         fadeIn<br>BounceRight
                     </div>
                 </div>
@@ -179,58 +167,40 @@
                 class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
                 <h2><b>Fade Out Effects</b></h2>
                 <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOut"
-                        data-copy-id="animate-fadeOut"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOut"
+                        data-copy-id="animate-fadeOut">
                         fadeOut
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutUp"
-                        data-copy-id="animate-fadeOutUp"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutUp"
+                        data-copy-id="animate-fadeOutUp">
                         fadeOutUp
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutDown"
-                        data-copy-id="animate-fadeOutDown"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutDown"
+                        data-copy-id="animate-fadeOutDown">
                         fadeOutDown
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutLeft"
-                        data-copy-id="animate-fadeOutLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutLeft"
+                        data-copy-id="animate-fadeOutLeft">
                         fadeOutLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutRight"
-                        data-copy-id="animate-fadeOutRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-fadeOutRight"
+                        data-copy-id="animate-fadeOutRight">
                         fadeOutRight
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopLeft"
-                        data-copy-id="animate-fadeOutTopLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopLeft"
+                        data-copy-id="animate-fadeOutTopLeft">
                         fadeOut<br>TopLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopRight"
-                        data-copy-id="animate-fadeOutTopRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutTopRight"
+                        data-copy-id="animate-fadeOutTopRight">
                         fadeOut<br>TopRight
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomLeft"
-                        data-copy-id="animate-fadeOutBottomLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomLeft"
+                        data-copy-id="animate-fadeOutBottomLeft">
                         fadeOut<br>BottomLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomRight"
-                        data-copy-id="animate-fadeOutBottomRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center text-center hover:animate-fadeOutBottomRight"
+                        data-copy-id="animate-fadeOutBottomRight">
                         fadeOut<br>BottomRight
                     </div>
                 </div>
@@ -241,79 +211,55 @@
                 class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
                 <h2><b>Slide In Effects</b></h2>
                 <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInUp"
-                        data-copy-id="animate-slideInUp"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInUp"
+                        data-copy-id="animate-slideInUp">
                         slideInUp
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInDown"
-                        data-copy-id="animate-slideInDown"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInDown"
+                        data-copy-id="animate-slideInDown">
                         slideInDown
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInLeft"
-                        data-copy-id="animate-slideInLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInLeft"
+                        data-copy-id="animate-slideInLeft">
                         slideInLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInRight"
-                        data-copy-id="animate-slideInRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideInRight"
+                        data-copy-id="animate-slideInRight">
                         slideInRight
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideUp"
-                        data-copy-id="animate-slideUp"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideUp"
+                        data-copy-id="animate-slideUp">
                         slideUp
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideDown"
-                        data-copy-id="animate-slideDown"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideDown"
+                        data-copy-id="animate-slideDown">
                         slideDown
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideLeft"
-                        data-copy-id="animate-slideLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideLeft"
+                        data-copy-id="animate-slideLeft">
                         slideLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideRight"
-                        data-copy-id="animate-slideRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideRight"
+                        data-copy-id="animate-slideRight">
                         slideRight
                     </div>
                 </div>
                 <h2 class="mt-10"><b>Slide Out Effects</b></h2>
                 <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutUp"
-                        data-copy-id="animate-slideOutUp"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutUp"
+                        data-copy-id="animate-slideOutUp">
                         slideOutUp
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutDown"
-                        data-copy-id="animate-slideOutDown"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutDown"
+                        data-copy-id="animate-slideOutDown">
                         slideOutDown
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutLeft"
-                        data-copy-id="animate-slideOutLeft"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutLeft"
+                        data-copy-id="animate-slideOutLeft">
                         slideOutLeft
                     </div>
-                    <div
-                        class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutRight"
-                        data-copy-id="animate-slideOutRight"
-                    >
+                    <div class="effect-sample relative text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-slideOutRight"
+                        data-copy-id="animate-slideOutRight">
                         slideOutRight
                     </div>
                 </div>
@@ -324,69 +270,154 @@
                 class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
                 <h2><b>Fly In Effects</b></h2>
                 <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyIn"
-                        data-copy-id="animate-flyIn"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyIn"
+                        data-copy-id="animate-flyIn">
                         flyIn
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInUp"
-                        data-copy-id="animate-flyInUp"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInUp"
+                        data-copy-id="animate-flyInUp">
                         flyInUp
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInDown"
-                        data-copy-id="animate-flyInDown"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInDown"
+                        data-copy-id="animate-flyInDown">
                         flyInDown
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInLeft"
-                        data-copy-id="animate-flyInLeft"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInLeft"
+                        data-copy-id="animate-flyInLeft">
                         flyInLeft
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInRight"
-                        data-copy-id="animate-flyInRight"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyInRight"
+                        data-copy-id="animate-flyInRight">
                         flyInRight
                     </div>
                 </div>
 
                 <h2 class="mt-10"><b>Fly Out Effects</b></h2>
                 <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOut"
-                        data-copy-id="animate-flyOut"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOut"
+                        data-copy-id="animate-flyOut">
                         flyOut
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutUp"
-                        data-copy-id="animate-flyOutUp"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutUp"
+                        data-copy-id="animate-flyOutUp">
                         flyOutUp
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutDown"
-                        data-copy-id="animate-flyOutDown"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutDown"
+                        data-copy-id="animate-flyOutDown">
                         flyOutDown
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutLeft"
-                        data-copy-id="animate-flyOutLeft"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutLeft"
+                        data-copy-id="animate-flyOutLeft">
                         flyOutLeft
                     </div>
-                    <div
-                        class="effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutRight"
-                        data-copy-id="animate-flyOutRight"
-                    >
+                    <div class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flyOutRight"
+                        data-copy-id="animate-flyOutRight">
                         flyOutRight
+                    </div>
+                </div>
+            </div>
+
+
+            <!--4th Effect: Flip Horizontal/Vertical-->
+            <div id="flip"
+                class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
+                <h2><b>Horizontal Flip Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flip"
+                        data-copy-id="animate-flip">
+                        flip
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipUp"
+                        data-copy-id="animate-flipUp">
+                        flipUp
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipDown"
+                        data-copy-id="animate-flipDown">
+                        flipDown
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipLeft"
+                        data-copy-id="animate-flipLeft">
+                        flipLeft
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipRight"
+                        data-copy-id="animate-flipRight">
+                        flipRight
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipTopLeft"
+                        data-copy-id="animate-flipTopLeft">
+                        flipTopLeft
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipTopRight"
+                        data-copy-id="animate-flipTopRight">
+                        flipTopRight
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipBottomLeft"
+                        data-copy-id="animate-flipBottomLeft">
+                        flipBottomLeft
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipBottomRight"
+                        data-copy-id="animate-flipBottomRight">
+                        flipBottomRight
+                    </div>
+                </div>
+            </div>
+            <div id="flipy"
+                class="content-hidden w-full h-full mx-auto invisible animate-fadeInBounceUp mb-24 md:mb-8 shadow bg-gray-100 text-black rounded-lg p-4 hidden">
+                <h2><b>Vertical Flip Effects</b></h2>
+                <div class="mt-5 grid grid-cols-2 md:grid-cols-5 gap-5 overflow-hidden cursor-pointer">
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipy"
+                        data-copy-id="animate-flipy">
+                        flipy
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyUp"
+                        data-copy-id="animate-flipyUp">
+                        flipyUp
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyDown"
+                        data-copy-id="animate-flipyDown">
+                        flipyDown
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyLeft"
+                        data-copy-id="animate-flipyLeft">
+                        flipyLeft
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyRight"
+                        data-copy-id="animate-flipyRight">
+                        flipyRight
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyTopLeft"
+                        data-copy-id="animate-flipyTopLeft">
+                        flipyTopLeft
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyTopRight"
+                        data-copy-id="animate-flipyTopRight">
+                        flipyTopRight
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyBottomLeft"
+                        data-copy-id="animate-flipyBottomLeft">
+                        flipyBottomLeft
+                    </div>
+                    <div
+                        class="relative effect-sample bg-indigo-100 text-indigo-600 text-base w-full h-24 md:h-32 font-medium flex items-center justify-center text-center hover:animate-flipyBottomRight"
+                        data-copy-id="animate-flipyBottomRight">
+                        flipyBottomRight
                     </div>
                 </div>
             </div>
@@ -441,7 +472,7 @@
             </symbol>
         </defs>
     </svg>
-    <script src= "../assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
 </body>
 
 </html>
